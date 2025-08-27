@@ -1,17 +1,20 @@
 {
-  "name": "SocketServer",
+  "name": "socket-chat-server",
   "version": "1.0.0",
+  "description": "Simple Socket.IO chat server with rooms and invites",
   "main": "server.js",
-  "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "socket.io": "^4.8.1"
+    "express": "^4.18.2",
+    "socket.io": "^4.7.1"
   },
-  "engines": {
-    "node": ">=18"
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }
